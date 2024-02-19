@@ -8,7 +8,7 @@ import lombok.Data;
 @ManyToMany
 @Entity
 public class Tickets {
-    @GeneratedValue(strategy = GenerationType.IDENTITY);
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private Integer id;
     private Integer avaliableTickets;

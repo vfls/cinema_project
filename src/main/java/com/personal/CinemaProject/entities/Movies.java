@@ -8,17 +8,15 @@ import java.util.Date;
 @Data
 @ManyToMany
 @Entity
+@Table(name = "movies")
 public class Movies {
-    @GeneratedValue(strategy = GenerationType.IDENTITY);
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private Integer id;
 
     private String title;
 
     private Integer runtime;
-
-    private Date premierDate;
-
     private String genre;
 
     private String synopsis;

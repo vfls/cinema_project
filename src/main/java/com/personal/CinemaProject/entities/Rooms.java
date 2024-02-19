@@ -9,7 +9,7 @@ import lombok.Data;
 @Entity
 public class Rooms {
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY);
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private Integer id;
 
