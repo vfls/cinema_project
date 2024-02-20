@@ -5,13 +5,20 @@ import lombok.Data;
 
 @Data
 @Table(name = "rooms")
-@ManyToMany
 @Entity
 public class Rooms {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
+    @Column(name = "id")
     private Integer id;
 
-    Integer totalSeats;
+    @Column(name = "total_seats")
+    private Integer totalSeats;
+
+    @Column(name = "available_seats")
+    private Integer availableSeats;
+
+    @Column(name = "reserved_seats")
+    private Integer reservedSeats;
 }
